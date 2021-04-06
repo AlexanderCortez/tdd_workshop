@@ -1,0 +1,15 @@
+{
+  "moduleDirectories": ["node_modules", "<rootDir>/src"],
+  "rootDir": ".",
+  "transform": {
+    "^.+\\.(js|jsx)$": "babel-jest",
+    "^.+\\.(ts|tsx)$": "ts-jest"
+  },
+  "coverageDirectory": "<rootDir>/coverage",
+  "collectCoverageFrom": ["<rootDir>/**/*.{js,jsx,ts,tsx}"],
+  "moduleNameMapper": {
+    "^.+\\.(css|less|scss)": "babel-jest",
+    "^.+\\.(jpg|jpeg|png|svg)": "babel-jest"
+  },
+  "setupFilesAfterEnv": ["<rootDir>/src/setupTests.ts"]
+}
