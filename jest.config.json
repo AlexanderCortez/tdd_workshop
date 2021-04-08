@@ -11,5 +11,7 @@
     "^.+\\.(css|less|scss)": "babel-jest",
     "^.+\\.(jpg|jpeg|png|svg)": "babel-jest"
   },
-  "setupFilesAfterEnv": ["<rootDir>/src/setupTests.ts"]
+  "setupFilesAfterEnv": ["<rootDir>/src/__tests__/setupTests.ts"],
+  "snapshotSerializers": ["enzyme-to-json/serializer"],
+  "testMatch": ["**/?(*.)+(spec|test).ts(x)"]
 }
